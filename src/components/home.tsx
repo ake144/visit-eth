@@ -13,7 +13,7 @@ import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import Testimonials from "./testimonials";
 import ProverbCard from "./proverbCard";
 import { FAQ } from "./faq";
-import {sites, images} from '@/lib/data';
+import { sites, images } from '@/lib/data';
 
 
 
@@ -46,7 +46,7 @@ const Home = () => {
                   alt={image.alt}
                   className="w-full h-full object-cover"
                 />
-                
+
               </div>
             </CarouselItem>
           ))}
@@ -54,28 +54,28 @@ const Home = () => {
 
         {/* Custom Previous Button */}
         <button
-          className="absolute left-2 top-1/2 transform -translate-y-1/2  text-5xl font-bold  p-7 rounded-full   transition"
+          className="absolute left-2 top-1/2 text-white transform -translate-y-1/2  text-5xl font-bold  p-7 rounded-full   transition"
           onClick={handlePrevious}
         >
-        <GoChevronLeft />
+          <GoChevronLeft />
         </button>
 
         {/* Custom Next Button */}
         <button
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 text-5xl font-bold p-7 rounded-full  transition"
+          className="absolute right-2 text-white top-1/2 transform -translate-y-1/2 text-5xl font-bold p-7 rounded-full  transition"
           onClick={handleNext}
         >
-         <GoChevronRight />
+          <GoChevronRight />
         </button>
       </Carousel>
 
 
       <div className="flex flex-col  mx-[15%] items-center justify-center text-black mt-14">
         <h1 className="text-4xl font-bold">WELCOME TO ETHIOPIA</h1>
-        <ProverbCard  />
+        <ProverbCard />
         <Separator className="my-4 w-[400px]" />
         <h1 className="text-3xl mt-11">DISCOVER ETHIOPIA</h1>
-        <Separator className="my-4  w-[400px]" />  
+        <Separator className="my-4  w-[400px]" />
         <p className="text-xl">
           Ethiopia invites you to discover why it is the origin of so much
         </p>
@@ -96,42 +96,41 @@ const Home = () => {
           Ethiopia has become the most attractive and popular emergent tourist
           destination in Africa.
         </p>
-      
+
       </div>
 
       <div className="flex flex-col items-center justify-center text-black mt-14">
-   
+
 
         <h1 className="text-3xl mt-14">Popular Things to Visit</h1>
-         <Separator className="my-4  w-[400px]" />  
-         <p className="p-3 mb-8 ">Here in our site We have a Variety of insight fully planned and well-developed tour packaages and itineraries to meet the different inteerests and needs of out esteemed clients.</p>
-          
-          <div className="grid  w-[80%] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                { sites.map((site, index) => (
-                  <div>
-                    <Cards site={site} key={index} />
-                    
-                    </div>
-   
-                ))
+        <Separator className="my-4  w-[400px]" />
+        <p className="p-3 mb-8 ">Here in our site We have a Variety of insight fully planned and well-developed tour packaages and itineraries to meet the different inteerests and needs of out esteemed clients.</p>
 
-                }
-          </div>
-          <Link to='/about' className="my-11">
-            <Button variant='secondary' className="mt-8 items-center hover:bg-blue-700 text-md bg-blue-700 ">
-              Learn More 
-              
-              </Button>
-            </Link>
-         </div>   
+        <div className="grid  w-[80%] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {sites.map((site, index) => (
+            <div>
+              <Cards site={site} key={index} />
 
-            <div>
-                <Testimonials />
             </div>
-            <div>
-              <FAQ  />
-            </div>
-          
+
+          ))
+          }
+        </div>
+        <Link to='/about' className="my-11">
+          <Button variant='secondary' className="mt-8 items-center hover:bg-blue-700 text-md bg-blue-700 ">
+            Learn More
+
+          </Button>
+        </Link>
+      </div>
+
+      <div>
+        <Testimonials />
+      </div>
+      <div>
+        <FAQ />
+      </div>
+
     </div>
   );
 }
