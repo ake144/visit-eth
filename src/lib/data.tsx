@@ -6,14 +6,39 @@ export const images = [
     { src: "/images/midaqo.jpg", alt: "learn image" , text: "Visit Midaqo"},
   ];
 
-export const sites = [ 
-  { title: "Lalibela", image: "/images/lali.jpg", description: "Lalibela is a town in the Amhara region of northern Ethiopia. It's known for its distinctive rock-cut churches dating from the 12th and 13th centuries, which are pilgrimage sites for Coptic Christians." },
-  { title: "Rock Hewan", image: "/images/hewan.jpg", description: "Hewan is a town in the Amhara region of northern Ethiopia. It's known for its distinctive rock-cut churches dating from the 12th and 13th centuries, which are pilgrimage sites for Coptic Christians." },
-  { title: "Giraffe", image: "/images/girafe.jpg", description: "Girafe is a town in the Amhara region of northern Ethiopia. It's known for its distinctive rock-cut churches dating from the 12th and 13th centuries, which are pilgrimage sites for Coptic Christians." },
-  { title: "Culture", image: "/images/culture.jpg", description: "Ethiopian culture is known for it's inclusion of variety of cultures and diviersity.In Ethiopia there are more than 80 nations and each nation have it's own unique cultural expression and identity." },
-  { title: "National Park", image: "/images/midaqo.jpg", description: "Ethiopia has a variety of biodiversity.There are a ton of endemic animal, and within every national park you will find at least one endemic animals. " },
-  {title:'Ethiopia Coffe', image:"/images/coffe.jpg", description:"Ethiopia is known as origin of Coffe. Coffe of Jimma, keffa, and other well known coffe region are waiting  for you."}
+export const sites = [
+  {
+    "title": "Lalibela",
+    "image": "/images/lali.jpg",
+    "description": "Lalibela, located in northern Ethiopia's Amhara region, is famous for its remarkable rock-hewn churches, carved directly into the mountain during the 12th and 13th centuries. These architectural marvels serve as important pilgrimage sites for Ethiopian Orthodox Christians."
+  },
+  {
+    "title": "Rock-Hewn Churches",
+    "image": "/images/hewan.jpg",
+    "description": "Hewan, a historic town in the Amhara region, is home to a series of stunning rock-cut churches from the same era as Lalibela's, attracting religious pilgrims and cultural enthusiasts alike."
+  },
+  {
+    "title": "Giraffe Sanctuary",
+    "image": "/images/girafe.jpg",
+    "description": "Explore Ethiopia’s wildlife in the Giraffe Sanctuary, where you can witness the majestic giraffes in their natural habitat. This sanctuary is one of the unique attractions that celebrates Ethiopia's rich biodiversity."
+  },
+  {
+    "title": "Cultural Diversity",
+    "image": "/images/culture.jpg",
+    "description": "Ethiopia is a melting pot of over 80 different ethnic groups, each with its own rich cultural heritage. This diversity is celebrated through unique languages, traditions, music, and art, making Ethiopia one of the most culturally vibrant nations in the world."
+  },
+  {
+    "title": "National Parks",
+    "image": "/images/midaqo.jpg",
+    "description": "Ethiopia’s national parks are home to a wide array of wildlife, including many endemic species found nowhere else on Earth. Each park offers a unique glimpse into the country's extraordinary biodiversity."
+  },
+  {
+    "title": "Coffee",
+    "image": "/images/coffe.jpg",
+    "description": "Ethiopia is the birthplace of coffee, with regions like Jimma and Kaffa producing some of the world's finest beans. Ethiopian coffee is renowned for its rich flavors and deep history, making it a must-try for coffee enthusiasts."
+  }
 ]
+
 
 export const testimonials = [
     { name: "John Doe", quote: "My trip to Ethiopia was life-changing! The people, culture, and history are unmatched." },
